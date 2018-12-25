@@ -31,19 +31,19 @@ In `nuxt.config.js`
 ## Usage
 An `$actions` object is globally accessible via `this` in components or `$nuxt`.
 
-###`$actions.initial(actionName: String | String[])`
-`String`: returns true if action has not been called yet.<br>
+#### `$actions.initial(actionName: String | String[])` 
+`String`: returns true if action has not been called yet.  
 `String[]`: returns true if at least one action has not been called yet.
 
-###`$actions.pending(actionName: String | String[])`
-`String`: returns true if action has not been completed yet.<br>
+#### `$actions.pending(actionName: String | String[])` 
+`String`: returns true if action has not been completed yet.  
 `String[]`: returns true if at least one action has not been completed yet.
 
-###`$actions.done(actionName: String | String[])`
-`String`: returns true if action has not been completed yet.<br>
+#### `$actions.done(actionName: String | String[])` 
+`String`: returns true if action has not been completed yet.  
 `String[]`: returns true if at least one action has not been completed yet.
 
-###`$actions.states`
+### `$actions.states`
 Returns vuex-store state.<br>
 Also accessed via `this.$store.actionsStates.state`
 
@@ -54,7 +54,7 @@ Also accessed via `this.$store.actionsStates.state`
 Defaults to `actionStates`.
 Name for vuex store module. 
 
-#### mutation `String: option`
+#### mutation `String: optional`
 Defaults to `setActionType`.
 Name for vuex store mutation.
 
